@@ -9,5 +9,5 @@ task:
         image: apon77/aosp:cirrus
         cpu: 24
         memory: 120G
-    script:
-    - sleep 6000000
+  script: 
+    - sleep 600000
