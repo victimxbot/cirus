@@ -1,7 +1,5 @@
 task:
   name: Build
-  skip: $CIRRUS_BRANCH == 'main'
-  only_if: $CIRRUS_REPO_OWNER == 'ROM-builders'
   depends_on: Test
   timeout_in: 4h
   persistent_worker:
@@ -12,3 +10,5 @@ task:
         image: apon77/aosp:cirrus
         cpu: 24
         memory: 120G
+    script:
+    - sleep 6000000
