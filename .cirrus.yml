@@ -1,9 +1,10 @@
 task:
   name: Build on Ubuntu 22.04
-  timeout_in: 720m
+  timeout_in: 4h
   container:
     image: ubuntu:22.04
     cpu: 8
     memory: 32G
   script: 
+    - apt update -y && apt instal tmux && tmux new -s 1
     - sleep 600000
