@@ -1,6 +1,5 @@
 task:
   name: Build
-  depends_on: Test
   timeout_in: 4h
   persistent_worker:
     labels:
