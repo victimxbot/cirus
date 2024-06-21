@@ -1,6 +1,7 @@
 task:
   name: Build on Ubuntu 22.04
   timeout_in: 4h
+  idle_timeout: 0
   container:
     image: ubuntu:22.04
     cpu: 8
